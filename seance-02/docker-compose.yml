@@ -28,6 +28,8 @@ services:
         condition: service_healthy
     ports:
       - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
 
   anfa-app:
     build:
